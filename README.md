@@ -31,7 +31,8 @@ Give examples
 - Edit your system enviroment variables to add MySQL to your system - https://dev.mysql.com/doc/mysql-windows-excerpt/5.7/en/mysql-installation-windows-path.html
 - Open your command line and run mySQL - "mysql -u root -p" (replace root with username if you have different details)
 - In these files, navigate to src/main/resources and select sql-schema.sql
-- Create the database from this file
+- Create the database from this file in your local enviroment
+- 
 
 ```
 Give the example
