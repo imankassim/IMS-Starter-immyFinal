@@ -29,29 +29,27 @@ public class ItemControllerTest {
 	@InjectMocks
 	private ItemController controller;
 	
-//	@Test
-//	public void testCreate() {
-//		final String itemname = "Fridge"; 
-//		final Long itemstock = 13L;
-//		final Item created = new Item(itemname, itemstock);
-//		
-//		Mockito.when(utils.getString()).thenReturn(itemname);
-//		Mockito.when(utils.getLong()).thenReturn(itemstock);
-//		Mockito.when(dao.create(created)).thenReturn(created);
-//		
-//		assertEquals(created, controller.create());
-//		
-//		Mockito.verify(utils, Mockito.times(1)).getString();
-//		Mockito.verify(utils, Mockito.times(1)).getLong();
-//		Mockito.verify(dao, Mockito.times(1)).create(created);
-//	}
-	
-	
+	@Test
+	public void testCreate() {
+		final String I_NAME = "Candle"; 
+		final Long I_STOCK = 12L;
+		final Item created = new Item(I_NAME, I_STOCK);
+		
+		Mockito.when(utils.getString()).thenReturn(I_NAME);
+		Mockito.when(utils.getLong()).thenReturn(I_STOCK);
+		Mockito.when(dao.create(created)).thenReturn(created);
+		
+		assertEquals(created, controller.create());
+		
+		Mockito.verify(utils, Mockito.times(1)).getString();
+		Mockito.verify(utils, Mockito.times(1)).getLong();
+		Mockito.verify(dao, Mockito.times(1)).create(created);
+	}
 	
 	@Test
 	public void testReadAll() {
 		List<Item> items = new ArrayList<>();
-		items.add(new Item(1L, "Microwave", 5L));
+		items.add(new Item(1L, "Lamp", 5L));
 		
 		Mockito.when(dao.readAll()).thenReturn(items);
 		
@@ -62,10 +60,10 @@ public class ItemControllerTest {
 	
 	@Test
 	public void testUpdate() {
-		Item updated = new Item(1L, "Pan", 8L);
+		Item updated = new Item(1L, "Pillow", 8L);
 		
 		Mockito.when(this.utils.getLong()).thenReturn(1L);
-		Mockito.when(this.utils.getString()).thenReturn("Pan");
+		Mockito.when(this.utils.getString()).thenReturn("Pillow");
 		Mockito.when(this.utils.getLong()).thenReturn(8L);
 		
 		assertEquals(updated, this.controller.update());
