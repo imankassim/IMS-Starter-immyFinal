@@ -1,7 +1,9 @@
 Coverage: 34%
-# Project Title
+# Inventory Management System
 
-One Paragraph of project description goes here
+This is an inventory management system which is accessed through the terminal. This can be used to create, update, read and delete customer information, order information and item information.
+
+coverage = 16.1%
 
 ## Getting Started
 
