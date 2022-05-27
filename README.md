@@ -11,7 +11,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Software needed:
+
+Java Runtime Environment 17 (https://docs.oracle.com/goldengate/1212/gg-winux/GDRAD/java.htm#BGBFHBEA)
+
+MySQL (https://dev.mysql.com/downloads/)
+
+An IDE (I used Eclipse)
+
 
 ```
 Give examples
@@ -19,9 +26,12 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+- Install the JRE (Java Runtime Enviroment) onto your computer
+- Install MySQL onto your computer - set username and password to root (if you have mySQL already with different login details you need to change these in src/main/resources/db.properties AND src/main/resources/db.properties
+- Edit your system enviroment variables to add MySQL to your system - https://dev.mysql.com/doc/mysql-windows-excerpt/5.7/en/mysql-installation-windows-path.html
+- Open your command line and run mySQL - "mysql -u root -p" (replace root with username if you have different details)
+- In these files, navigate to src/main/resources and select sql-schema.sql
+- Create the database from this file
 
 ```
 Give the example
