@@ -18,4 +18,5 @@
       <AppenderRef ref="STDOUT" level="info"/>
     </Root>
   </Loggers>
-  </Configuration>
+</Configuration>
+</xml>
