@@ -40,7 +40,6 @@ public class OrderController implements CrudController<Order> {
 		Long amount = utils.getLong();
 		Order order = orderDAO.create(new Order(price, amount));
 		LOGGER.info("Order created");
-		LOGGER.info("Your total order cost is £" + (order.getPrice() * order.getAmount()));
 		return order;
 	}
 

@@ -23,7 +23,7 @@ public class OrderDAOTest {
 	
 	@Test
 	public void testCreate() {
-		final Order created = new Order(2L, 5L);
+		final Order created = new Order(2L, 5L, 6L);
 		assertEquals(created, DAO.create(created));
 	}
 	
